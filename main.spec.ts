@@ -3,6 +3,7 @@ import {expect} from 'chai';
 import 'mocha';
 
 describe('String Calcultator', () => {
+
   it('empty string it will return 0', () => {
 
     let strNum: string = "";
@@ -25,7 +26,7 @@ describe('String Calcultator', () => {
     expect(roman).equal(3);
   });
 
-  it('handle new lines between numbers "1\n2,3" = 6', () => {
+  it('handle new lines between numbers', () => {
 
     let strNum: string = "1\n2,3";
     
@@ -36,7 +37,7 @@ describe('String Calcultator', () => {
     expect(roman).equal(6);
   });
 
-  it('support different delimiters "//;\n1;2" = 3', () => {
+  it('support different delimiters', () => {
 
     let strNum: string = "//;\n1;2";
     
@@ -71,7 +72,7 @@ describe('String Calcultator', () => {
   });
 
 
-  it('Delimiters can be of any length "//[***]\n1***2***3" = 6', () => {
+  it('Delimiters can be of any length', () => {
 
     let strNum: string = "//[***]\n1***2***3";
     
@@ -82,7 +83,7 @@ describe('String Calcultator', () => {
     expect(roman).equal(6);
   });
 
-  it('Allow multiple delimiters "//[*][%]\n1*2%3" = 6', () => {
+  it('Allow multiple delimiters', () => {
 
     let strNum: string = "//[***]\n1***2***3";
     
